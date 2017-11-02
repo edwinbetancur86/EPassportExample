@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="loginBackgroundColor">#2875ef</color>
+    <color name="loginLogoTextColor">#12eaad</color>
+    <color name="loginButtonColor">#2875ef</color>
+    <color name="toolbarColor">#b8bdc6</color>
+    <color name="wellness_text_color">#fefefe</color>
+    <color name="color_welcome_message_background">#1250a1</color>
+    <color name="color_the_basics_background">#2b87ff</color>
+    <color name="color_save_time_money_background">#6cc56a</color>
+    <color name="color_health_well_being_background">#cfde27</color>
+    <color name="color_prescription_drugs_background">#8d3005</color>
+    <color name="color_help_on_your_journey_background">#a249d5</color>
+    <color name="category_menu_item_color1">#086208</color>
+    <color name="category_menu_item_color2">#a49106</color>
+</resources>

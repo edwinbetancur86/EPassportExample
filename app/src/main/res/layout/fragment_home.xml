@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.edwinb.epassportexample.MainMenu.MainMenuActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="530dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:id="@+id/linearLayoutUnpack"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/wellness_text_color"
+                android:text="@string/wellness_image_placeholder"/>
+
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/welcomeMessage"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:clickable="true"
+            android:layout_marginTop="200dp"
+            app:cardBackgroundColor="@color/color_welcome_message_background">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/welcomeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="WELCOME!"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/whatDoYouMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="What do you want to learn about?"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/welcomeText"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/theBasicsCard"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="280dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/color_the_basics_background">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/theBasics"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/common_full_open_on_phone"
+                    android:text="WELCOME!"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/theBasicsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="14dp"
+                    android:text="THE BASICS"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@+id/theBasics"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/saveTimeMoneyCard"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="330dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/color_save_time_money_background">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/saveTimeMoneyImage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/ic_menu_camera"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/saveTimeMoneyText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="15dp"
+                    android:text="SAVE TIME &amp; MONEY"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@+id/saveTimeMoneyImage"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/healthWellBeingCard"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="380dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/color_health_well_being_background">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/healthWellBeingImage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/ic_menu_manage"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/healthWellBeingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="15dp"
+                    android:text="HEALTH &amp; WELL BEING"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@+id/healthWellBeingImage"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/prescriptionDrugsCard"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="430dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/color_prescription_drugs_background">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/prescriptionDrugsImage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/ic_menu_gallery"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/prescriptionDrugsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="15dp"
+                    android:text="PRESCRIPTION DRUGS"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@+id/prescriptionDrugsImage"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/helpOnYourJourneyCard"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="480dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/color_help_on_your_journey_background">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/helpOnYourJourneyImage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/ic_menu_send"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/helpOnYourJourneyText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="15dp"
+                    android:text="HELP ON YOUR JOURNEY"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@+id/helpOnYourJourneyImage"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </FrameLayout>
+
+    <!--<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/container">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="top"
+            android:background="@drawable/shadow"/>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_gravity="bottom"
+            design:menu="@menu/menu_navigation"
+            android:layout_marginLeft="8dp" />
+
+
+    </FrameLayout>-->
+
+
+
+
+</RelativeLayout>
